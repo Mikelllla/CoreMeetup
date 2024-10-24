@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-// import staking_abi from "../artifacts/contracts/userProfile.sol/UserProfile.json";
+
 import staking_abi from "../artifacts/contracts/userProfile.sol/StakingContract.json";
 import sCore_abi from "../artifacts/contracts/sCore.sol/Score.json";
 
@@ -13,8 +13,8 @@ export default function CoreStakingPage() {
   const [stakeAmount, setStakeAmount] = useState("");
   const [withdrawAmount, setWithdrawAmount] = useState("");
 
-  const contractAddress = "0xA98525e717B90D86950f62aE1b6373D2FA1d34E1";
-  const sCoreAddress = "0xcdbDBa075c33D8d7996d45a06D2e1b39880F759a";
+  const contractAddress = "0x0cC4365C9ae8aaA4Ed1a5C6c91973770064F1ddc";
+  const sCoreAddress = "0xAa565Ea352eA5AB9E480D7a9392ebF75F376668e";
   const scoreABI = sCore_abi.abi;
   const stakingABI = staking_abi.abi;
 
